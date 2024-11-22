@@ -1,0 +1,54 @@
+/* TeamStats.css */
+
+.team-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* רקע שקוף */
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-out; /* אנימציה בהופעה */
+}
+
+.stats-section {
+    text-align: center; /* טקסט במרכז */
+    color: #ffcc00; /* צבע טקסט צהוב */
+    width: 100%;
+}
+
+.stats-section h2 {
+    font-size: 2.5em; /* גודל טקסט גדול יותר */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* צל לטקסט */
+}
+
+.stat-item {
+    background-color: rgba(0, 0, 0, 0.5); /* רקע כהה */
+    color: #fff; /* טקסט לבן */
+    padding: 15px 20px; /* פדינג סביב הסטטיסטיקה */
+    border-radius: 10px; /* פינות מעוגלות */
+    margin: 10px 0; /* רווח בין הסטטיסטיקות */
+    transition: transform 0.3s, background 0.3s; /* אנימציה על ריחוף */
+}
+
+.stat-item:hover {
+    background-color: rgba(255, 204, 0, 0.7); /* צבע רקע על ריחוף */
+    color: #000; /* שינוי צבע טקסט על ריחוף */
+    transform: scale(1.05); /* הגדלה קלה על ריחוף */
+}
+
+/* אנימציות */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,339 @@
+
+/*!*.teams-table {*!*/
+/*!*    display: flex;*!*/
+/*!*    flex-direction: column;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: center;*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*    background-color: rgba(255, 255, 255, 0.1); !* רקע שקוף *!*!*/
+/*!*    padding: 20px;*!*/
+/*!*    border-radius: 10px;*!*/
+/*!*    backdrop-filter: blur(10px);*!*/
+/*!*    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);*!*/
+/*!*}*!*/
+
+/*!*.teams-list {*!*/
+/*!*    display: flex;*!*/
+/*!*    flex-wrap: wrap; !* לאפשר לקבוצות להיות זו לצד זו *!*!*/
+/*!*    justify-content: center;*!*/
+/*!*    width: 100%;*!*/
+/*!*}*!*/
+
+/*!*.team-card {*!*/
+/*!*    background-color: rgba(0, 0, 0, 0.5); !* רקע של כרטיס *!*!*/
+/*!*    color: #fff; !* טקסט לבן *!*!*/
+/*!*    padding: 15px;*!*/
+/*!*    margin: 10px; !* רווח בין הכרטיסים *!*!*/
+/*!*    border-radius: 10px;*!*/
+/*!*    text-align: center;*!*/
+/*!*    width: 150px; !* גובה קבוע *!*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    transition: transform 0.3s, background 0.3s; !* אנימציה על ריחוף *!*!*/
+/*!*}*!*/
+
+/*!*.team-card:hover {*!*/
+/*!*    background-color: rgba(255, 255, 255, 0.1); !* צבע רקע על ריחוף *!*!*/
+/*!*    transform: scale(1.05); !* אנימציה של הגדלה על ריחוף *!*!*/
+/*!*}*!*/
+
+/*!*.players-section {*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*    text-align: center;*!*/
+/*!*    color: #fff; !* צבע לבן *!*!*/
+/*!*}*!*/
+
+/*!*.players-section h2 {*!*/
+/*!*    font-size: 2em;*!*/
+/*!*    margin-bottom: 10px;*!*/
+/*!*}*!*/
+
+/*!*.players-section ul {*!*/
+/*!*    list-style-type: none;*!*/
+/*!*    padding: 0;*!*/
+/*!*}*!*/
+
+/*!*.players-section li {*!*/
+/*!*    font-size: 1.2em;*!*/
+/*!*    margin: 5px 0;*!*/
+/*!*    color: #fff; !* צבע לבן *!*!*/
+/*!*}*!*/
+
+/*!*.goals-format {*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*    font-size: 1.5em;*!*/
+/*!*    color: #fff; !* צבע לבן *!*!*/
+/*!*    text-align: center;*!*/
+/*!*}*!*/
+/*!*.matches-header {*!*/
+/*!*    font-size: 2.5em; !* גודל טקסט גדול *!*!*/
+/*!*    font-weight: bold; !* טקסט מודגש *!*!*/
+/*!*    color: #ffcc00; !* צבע טקסט צהוב *!*!*/
+/*!*    background-color: rgba(113, 101, 101, 0.6); !* צבע רקע כהה עם שקיפות *!*!*/
+/*!*    padding: 15px 20px; !* ריפוד מסביב לטקסט *!*!*/
+/*!*    text-align: center; !* מיישר את הטקסט במרכז *!*!*/
+/*!*    border-radius: 10px; !* קצוות מעוגלים *!*!*/
+/*!*    margin: 20px 0; !* רווח למעלה ולמטה *!*!*/
+/*!*    box-shadow: 0 4px 10px rgba(113, 101, 101, 0.6); !* צל להדגשה *!*!*/
+/*!*    !*text-transform: uppercase; !* ממריץ את הטקסט לאותיות גדולות *!*!*!*/
+/*!*    letter-spacing: 2px; !* מרווח בין אותיות *!*!*/
+/*!*    transition: background-color 0.3s; !* אנימציה על שינוי צבע רקע *!*!*/
+/*!*}*!*/
+
+/*!*.matches-header:hover {*!*/
+/*!*    background-color: rgba(63, 60, 51, 0.8); !* צבע רקע בהיר יותר על ריחוף *!*!*/
+/*!*}*!*/
+/*!* TeamsTable.css *!*/
+/*.teams-table {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin-top: 20px;*/
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    backdrop-filter: blur(10px);*/
+/*    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/*.teams-list {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.team-card {*/
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+/*    color: #fff;*/
+/*    padding: 15px;*/
+/*    margin: 10px;*/
+/*    border-radius: 10px;*/
+/*    text-align: center;*/
+/*    width: 120px;*/
+/*    cursor: pointer;*/
+/*    transition: transform 0.3s, background 0.3s;*/
+/*}*/
+
+/*.team-card:hover {*/
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*.players-section {*/
+/*    margin-top: 20px;*/
+/*    text-align: center;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.players-section ul {*/
+/*    list-style-type: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.player-item {*/
+/*    width:110px ;///////////////////////*/
+/*    font-size: 1.5em;*/
+/*    margin: 10px 0;*/
+/*    position: relative;*/
+/*    color: #ffcc00;*/
+/*    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+/*    padding: 10px;*/
+/*    background: rgba(0, 0, 0, 0.6);*/
+/*    border-radius: 8px;*/
+/*    transition: transform 0.3s ease, background-color 0.3s ease;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.player-item:hover {*/
+/*    transform: translateY(-5px) scale(1.05);*/
+/*    background-color: rgba(255, 204, 0, 0.8);*/
+/*}*/
+
+/*.player-name {*/
+/*    font-weight: bold;*/
+/*    display: inline-block;*/
+/*    letter-spacing: 1.5px;*/
+/*    animation: playerEntry 1s ease-in-out forwards;*/
+/*}*/
+
+/*.player-name::before {*/
+/*    content: '⚽';*/
+/*    margin-right: 10px;*/
+/*    animation: bounce 2s infinite;*/
+/*}*/
+
+/*@keyframes playerEntry {*/
+/*    from {*/
+/*        opacity: 0;*/
+/*        transform: translateY(-20px);*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
+
+/*@keyframes bounce {*/
+/*    0%, 100% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(-5px);*/
+/*    }*/
+/*}*/
+
+/*.goals-format {*/
+/*    margin-top: 20px;*/
+/*    font-size: 1.5em;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.matches-header {*/
+/*    font-size: 2.5em;*/
+/*    font-weight: bold;*/
+/*    color: #ffcc00;*/
+/*    background-color: rgba(113, 101, 101, 0.6);*/
+/*    padding: 15px 20px;*/
+/*    text-align: center;*/
+/*    border-radius: 10px;*/
+/*    margin: 20px 0;*/
+/*    box-shadow: 0 4px 10px rgba(113, 101, 101, 0.6);*/
+/*    letter-spacing: 2px;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+/*.matches-header:hover {*/
+/*    background-color: rgba(63, 60, 51, 0.8);*/
+/*}*/
+.teams-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.teams-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.team-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.team-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.players-section {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.players-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.player-item {
+    width: 110px;
+    font-size: 1.5em;
+    margin: 10px 0;
+    position: relative;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.player-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgba(255, 204, 0, 0.8);
+}
+
+.player-name {
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    animation: playerEntry 1s ease-in-out forwards;
+}
+
+.player-name::before {
+    content: '⚽';
+    margin-right: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes playerEntry {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.goals-format {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.matches-header {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffcc00;
+    background-color: rgba(113, 101, 101, 0.6);
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(113, 101, 101, 0.6);
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
+}
+
+.matches-header:hover {
+    background-color: rgba(63, 60, 51, 0.8);
+}

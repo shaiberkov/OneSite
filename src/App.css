@@ -1,0 +1,113 @@
+body {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTsK66E67J187NN03Eps_0P6YK4YgljxF2g&s') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+button {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/*body {*/
+/*  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTsK66E67J187NN03Eps_0P6YK4YgljxF2g&s') no-repeat center center fixed;*/
+/*  background-size: cover;*/
+/*  font-family: 'Arial', sans-serif;*/
+/*  color: #fff;*/
+/*}*/
+
+/*.container {*/
+/*  max-width: 1000px;*/
+/*  margin: 0 auto;*/
+/*  padding: 20px;*/
+/*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+/*  border-radius: 10px;*/
+/*  backdrop-filter: blur(5px);*/
+/*}*/
+
+/*.sections-container {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap; !* מאפשר לריבועים לעבור לשורה הבאה אם אין מקום *!*/
+/*  justify-content: space-between; !* מרווח שווה בין האלמנטים *!*/
+/*  gap: 20px; !* רווח בין הריבועים *!*/
+/*}*/
+
+/*.section {*/
+/*  flex: 1 1 45%; !* כל ריבוע יתפוס לפחות 45% מהרוחב *!*/
+/*  margin: 20px;*/
+/*  padding: 20px;*/
+/*  border: 2px solid #ffcc00;*/
+/*  border-radius: 10px;*/
+/*  background: rgba(0, 0, 0, 0.5);*/
+/*  transition: transform 0.3s;*/
+/*  max-width: 45%; !* קובע את הרוחב המקסימלי של כל ריבוע *!*/
+/*  min-width: 250px; !* רוחב מינימלי *!*/
+/*}*/
+
+/*.section:hover {*/
+/*  transform: scale(1.02);*/
+/*}*/
+
+/*button {*/
+/*  padding: 10px 20px;*/
+/*  background-color: #ffcc00;*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  transition: background-color 0.3s, transform 0.3s;*/
+/*}*/
+
+/*button:hover {*/
+/*  background-color: #e6b800;*/
+/*  transform: scale(1.05);*/
+/*}*/
+
+/*.matches-header {*/
+/*  font-size: 2.5em; !* גודל טקסט גדול *!*/
+/*  font-weight: bold; !* טקסט מודגש *!*/
+/*  color: #ffcc00; !* צבע טקסט צהוב *!*/
+/*  background-color: rgba(113, 101, 101, 0.6); !* צבע רקע כהה עם שקיפות *!*/
+/*  padding: 15px 20px; !* ריפוד מסביב לטקסט *!*/
+/*  text-align: center; !* מיישר את הטקסט במרכז *!*/
+/*  border-radius: 10px; !* קצוות מעוגלים *!*/
+/*  margin: 20px 0; !* רווח למעלה ולמטה *!*/
+/*  box-shadow: 0 4px 10px rgba(113, 101, 101, 0.6); !* צל להדגשה *!*/
+/*  letter-spacing: 2px; !* מרווח בין אותיות *!*/
+/*  transition: background-color 0.3s; !* אנימציה על שינוי צבע רקע *!*/
+/*}*/
+
+/*.matches-header:hover {*/
+/*  background-color: rgba(63, 60, 51, 0.8); !* צבע רקע בהיר יותר על ריחוף *!*/
+/*}*/
